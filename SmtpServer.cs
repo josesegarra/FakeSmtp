@@ -57,6 +57,7 @@ namespace MySmtp
                                 myMessage.Process(line);
                                 line = reader.ReadLine();
                             }
+                            myMessage.Update();
                             myMessage.Display();
                             writer.WriteLine("250 OK");
                             break;
